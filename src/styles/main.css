@@ -1,0 +1,16 @@
+/*
+ * PostCSS styles to test Rollup’s handling of them.
+ */
+
+/* Variables */
+$color-heading: #111;
+$color-text: #444;
+$color-gradient-start: #efefff;
+$color-lightest: #fff;
+$font-family: sans-serif;
+
+/* Simple reset. */
+body,* {
+  box-sizing: border-box;
+  margin: 0;
+}

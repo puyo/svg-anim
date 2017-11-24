@@ -1,0 +1,43 @@
+{
+  "name": "learn-rollup",
+  "version": "0.0.1",
+  "description": "This is an example project to accompany a tutorial on using Rollup.",
+  "main": "build/js/main.min.js",
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "watch": "rollup -c --watch --live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jlengstorf/learn-rollup.git"
+  },
+  "author": "Jason Lengstorf <jason@lengstorf.com> (@jlengstorf)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengstorf/learn-rollup/issues"
+  },
+  "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
+  "devDependencies": {
+    "bankai": "^9.0.1",
+    "cssnano": "^3.7.4",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-nested": "^2.0.2",
+    "postcss-simple-vars": "^4.0.0",
+    "rollup": "^0.51.8",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.3.1"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "jquery": "^3.2.1",
+    "outdated": "^0.1.1"
+  }
+}
