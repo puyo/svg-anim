@@ -1,13 +1,12 @@
 import './styles/main.css'
-import jQuery = require('jquery')
+import jQuery from 'jquery'
+import debug from 'debug'
 import { sayHelloTo, sayGoodbyeTo } from './modules/mod1'
 import addArray from './modules/mod2'
-import debug = require('debug')
+import * as Phaser from 'phaser'
 
-const log = debug('app:log')
 const $ = jQuery
-
-// window.$ = window.jQuery = jquery // for bootstrap.js
+const log = debug('app:log')
 
 // The logger should only be disabled if we’re not in production.
 if (ENV !== 'production') {
@@ -29,7 +28,7 @@ const url = `https://images.ozspeedtest.com/images/grass_15mb.jpg?t=${t}`
 //const url = 'https://www.youtube.com'
 var percentComplete = 1
 
-jQuery.ajax({
+$.ajax({
   method: "post",
   url: url,
   data: { actionPerform: "actionPerform" },
