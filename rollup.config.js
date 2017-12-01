@@ -8,6 +8,7 @@ import uglify from 'rollup-plugin-uglify'
 import postcss from 'rollup-plugin-postcss'
 import livereload from 'rollup-plugin-livereload'
 import serve from 'rollup-plugin-serve'
+import typescript from 'rollup-plugin-typescript'
 
 // PostCSS plugins
 import simplevars from 'postcss-simple-vars'
@@ -16,7 +17,7 @@ import cssnext from 'postcss-cssnext'
 import cssnano from 'cssnano'
 
 export default {
-  input: 'src/scripts/main.js',
+  input: 'src/main.ts',
   output: {
     file: 'build/js/main.min.js',
     format: 'iife',
@@ -24,6 +25,7 @@ export default {
     sourcemap: 'inline',
   },
   plugins: [
+    typescript(),
     postcss({
       plugins: [
         simplevars(),
