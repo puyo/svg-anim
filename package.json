@@ -19,12 +19,11 @@
   },
   "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
   "devDependencies": {
-    "bankai": "^9.0.1",
     "cssnano": "^3.7.4",
     "postcss-cssnext": "^3.0.2",
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",
-    "rollup": "^0.51.8",
+    "rollup": "^0.52.0",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-eslint": "^4.0.0",
     "rollup-plugin-livereload": "^0.6.0",
