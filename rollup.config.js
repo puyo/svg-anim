@@ -26,6 +26,16 @@ export default {
   },
   plugins: [
     typescript(),
+    resolve({
+      main: true,
+      browser: true,
+    }),
+    commonjs({
+      namedExports: {
+        'debug': 'debug',
+        'pixi': 'PIXI',
+      },
+    }),
     postcss({
       plugins: [
         simplevars(),
@@ -34,14 +44,6 @@ export default {
         cssnano(),
       ],
       extensions: [ '.css' ],
-    }),
-    resolve({
-      jsnext: true,
-      main: true,
-      browser: true,
-    }),
-    commonjs({
-      namedExports: { 'debug': 'debug' },
     }),
     // eslint({
     //   exclude: [
